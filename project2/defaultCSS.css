@@ -1,0 +1,171 @@
+/*
+Purpose: Basic style sheet for Web Project 2
+Author: Hunter Soper
+
+Any additional CSS formatting that you wish to add should be included within this external CSS file
+*/
+
+/*Top Right Bottom Left*/
+
+main {
+    display: block;
+    background-color: #FFFACC;
+    padding: 1px 50px 8em 25px;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+body {
+    background-color: #5A464C;
+}
+
+footer {
+    padding: 10px;
+    width: 100%;
+}
+
+.home_figure { /*ChefCat.png*/
+    padding-top: 20px;
+    float: left;
+    padding-right: 20px;
+}
+
+/*This is basically CSS to do Fig and Figcaption but i have more control over how i format it*/
+.block {
+    max-block-size: 300px;
+    float: right;
+}
+
+    .block .top { /*Recipie IMG/Video/Sound formatting*/
+        max-block-size: 300px;
+        padding: 0px 125px 0px 50px;
+    }
+
+    .block .bottom { /*Bottom block formatting (Caption)*/
+        font-size: 9px;
+        width:50%;
+        text-align:center;
+        padding-bottom: 50px;
+    }
+ 
+.fix{ /*fixing the padding for the video caption*/
+    padding-top: 70px;
+}
+
+.fix2 {/*fixing the size of the image on a couple pictures*/
+    width: 300px;
+    height: 300px;
+}
+
+/*Navigation Formatting*/
+
+.navbar { 
+    list-style-type: none;
+    margin: 0 0 5px 0;
+    padding: 2px;
+    overflow: hidden;
+    background-color: #FFFACC;
+    width:100%;
+}
+
+.li_nav { /*Modify the blocks that ARE the list in the navbar*/
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+.a_nav { /*Modify the text in the blocks in the list of the navbar*/
+    display: block;
+    color: #53131E;
+    padding: 12px;
+    text-align:center;
+    text-decoration: none;
+}
+
+/*Change the color of the active webpage in the navbar*/
+.active {
+    background-color: #5A464C;
+    color: gold;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #FFEFBD;
+}
+
+/*Dropdown Menu*/
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #53131E;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    min-width: 160px;
+}
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        /* Add a grey background color to dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Responsive image class*/
+img.responsive {
+    max-width: 100%;
+    height:auto;
+}
+
+.cbCollapseRow {
+    display: flex;
+}
+
+.cbCollapse {
+    background-image: url('https://www.pitsco.com/skins/mobile/PlusIcon.svg');
+    background-size: cover;
+    cursor: pointer;
+    padding: 30px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.content {
+    width: 100%;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+#nav ul li a.active {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+#player {
+    margin: auto;
+    border: 3px solid #333;
+    padding: 10px;
+}
